@@ -144,7 +144,7 @@ export const projects = [
   },
   {
     slug: "taskpad",
-    number: "03",
+    number: "04",
     name: "TaskPad",
     category: "Personal Productivity",
     status: "In development",
