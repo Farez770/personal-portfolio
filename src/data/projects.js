@@ -83,6 +83,66 @@ export const projects = [
     repoLabel: "Add your client GitHub repository URL",
   },
   {
+    slug: "booknook",
+    number: "03",
+    name: "BookNook",
+    category: "Full-Stack Online Library Platform",
+    status: "Live",
+    description:
+      "A full-stack online library platform for discovering books, managing personal book collections, borrowing books, and tracking returns.",
+    longDescription:
+      "BookNook is a full-stack online library platform built to make book discovery and collection management easier. Users can explore available books, add and manage their own listings, borrow books, and track borrowed books and return dates. The project combines a responsive Next.js frontend with an Express.js and MongoDB backend, using Better Auth for authentication and JWT for protected API access.",
+    image: "/images/book-nook.png",
+    accent: "#64e6a5",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Better Auth",
+      "JWT",
+    ],
+    features: [
+      "Browse books and explore new arrivals",
+      "User authentication with email/password and Google login",
+      "Add, edit, and delete personal book listings",
+      "Borrow available books with stock management",
+      "Track borrowed books and return dates",
+      "Return borrowed books and update book availability",
+      "Protected routes and JWT-secured APIs",
+      "Responsive design for mobile, tablet, and desktop",
+    ],
+    challenges: [
+      {
+        title: "Authentication and protected API access",
+        detail:
+          "Integrating Better Auth with the Express.js backend required handling JWT generation, token retrieval, and server-side token verification to protect user-specific operations.",
+      },
+      {
+        title: "Book borrowing and stock management",
+        detail:
+          "Managing book availability required validating available copies, preventing duplicate borrowing, updating stock quantities, and keeping borrow records synchronized.",
+      },
+      {
+        title: "Frontend and backend integration",
+        detail:
+          "Connecting the Next.js frontend with the Express.js API required handling asynchronous requests, API responses, authentication headers, and deployment environment variables.",
+      },
+    ],
+    improvements: [
+      "Add automated tests for authentication and borrowing workflows",
+      "Implement advanced book search, filtering, and pagination",
+      "Improve borrowing history and due-date notifications",
+      "Add role-based administration for managing the library",
+    ],
+    liveUrl: "https://book-nook-client-rose.vercel.app/",
+    repoUrl: "https://github.com/Farez770/book-nook-client.git",
+    repoLabel: "https://github.com/Farez770/book-nook-client.git",
+  },
+  {
     slug: "taskpad",
     number: "03",
     name: "TaskPad",

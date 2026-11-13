@@ -74,9 +74,9 @@ export default function Projects() {
                 <p className="mt-3 flex-1 text-sm leading-7 text-[#9699a3]">
                   {project.description}
                 </p>
-
+                {/* project.stack.slice(0, 4).map((tech) */}
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {project.stack.slice(0, 4).map((tech) => (
+                  {project.stack.map((tech) => (
                     <span
                       key={tech}
                       className="rounded-md border border-white/[0.08] px-2.5 py-1.5 mono text-[10px] text-[#b9bbc4]"
